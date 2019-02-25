@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Webpack and Babel Demo</title>   
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="page2.html">jQuery Version</a>
+    </nav>
+    <h1>Webpack and Babel Demo</h1>
+    <p>
+        <ul>
+            <li>This site has a two HTML pages</li>
+            <li>When you press any button, it runs some ES6+ code (modules, fat arrow, const)</li>
+            <li>npm was used to install webpack and babel.</li>
+            <li>babel transpiles ES6+ to ES5</li>
+            <li>on this page, webpack bundles the ES into a file called main.js</li>
+        </ul>
+    </p>
+    <p>
+        This site also demos how to create multiple bundles. I wanted one bundle with all the jQuery, and a different bundle with just raw javaScript.
+    </p>
+    <br />
+    <h2>Here's the event handling done with raw JavaScript ie addEventListener()</h2>
+    <p>
+        <button id="btnAdd">Add</button>
+        <button id="btnSubtract">Subtract</button>
+        <button id="btnMultiply">Multiply</button>
+        <button id="btnDivide">Divide</button>
+    </p>
+    <h3 id=es6MathsContainer></h3>
+</body>
+</html>
+<script src="js/dist/index.main.js"></script>
