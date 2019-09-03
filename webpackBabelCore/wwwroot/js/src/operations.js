@@ -6,7 +6,6 @@ const multiply = (x, y) => x * y;
 
 const divide = (x, y) => x / y;
 
-
 export default {
     add: add,
     subtract: subtract,
